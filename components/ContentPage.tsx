@@ -91,13 +91,16 @@ export const ContentPage = React.forwardRef<HTMLDivElement>((props, ref) => {
       {/* SECTION 8: THE CONCEPT */}
       <section className="py-24 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
         <MotionDiv {...fadeInViewport} className={`${cardStyle} !p-0 grid grid-cols-1 lg:grid-cols-2`}>
-             <div className="h-[400px] lg:h-auto relative overflow-hidden order-last lg:order-first">
-                <img 
-                    src={IMAGES.regency3} 
-                    alt="Regency Villa Detail" 
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 hover:scale-105"
+             <div className="h-[400px] lg:h-auto relative overflow-hidden order-last lg:order-first bg-black">
+                 <video 
+                    src={IMAGES.video} 
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="absolute inset-0 w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-aredco-green/20 mix-blend-multiply"></div>
+                <div className="absolute inset-0 bg-aredco-green/10 mix-blend-multiply"></div>
              </div>
              
              <div className="bg-white p-12 lg:p-16 flex flex-col justify-center">
@@ -162,7 +165,6 @@ export const ContentPage = React.forwardRef<HTMLDivElement>((props, ref) => {
             className="max-w-3xl mx-auto relative z-10"
         >
             <div className="text-center mb-16">
-                <span className="block font-sans text-sm tracking-[0.3em] uppercase text-aredco-gold/70 mb-4">Section 10</span>
                 <h2 className="font-serif text-4xl md:text-6xl mb-6 text-aredco-cream">Private Inquiry</h2>
                 <p className="font-sans font-light text-aredco-cream/80 text-lg max-w-lg mx-auto leading-relaxed">
                     This is a private conversation request. We invite you to share your details to begin the dialogue.

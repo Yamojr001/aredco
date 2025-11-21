@@ -1,5 +1,4 @@
 
-
 export const CONTENT = {
   brand: "AREDCO",
   tagline: "Quiet Luxury, Rooted in Legacy",
@@ -43,5 +42,5 @@ export const IMAGES = {
   regency1: "https://triplee.ng/image/regency1.JPG", // Wide Aerial
   regency2: "https://triplee.ng/image/regency2.png", // Close Aerial
   regency3: "https://triplee.ng/image/regency3.jpg", // Ground View
-  video: "assets/regency.mov"      // Video (Kept as local asset since no URL provided)
+  video: "https://triplee.ng/image/Video.mp4"
 };

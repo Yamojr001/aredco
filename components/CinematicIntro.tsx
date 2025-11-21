@@ -48,7 +48,7 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({ onLearnMore }) =
         transition={{ duration: 2, delay: 0.5, ease: "easeInOut" }}
         className="text-center px-4 flex flex-col items-center relative z-10"
       >
-        <div className="w-48 md:w-64 lg:w-80 mb-8 flex items-center justify-center">
+        <div className="w-48 md:w-64 lg:w-80 mb-4 flex items-center justify-center">
             <MotionImg 
                 src={IMAGES.logo}
                 alt={CONTENT.brand}
@@ -62,7 +62,7 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({ onLearnMore }) =
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5, delay: 2.5 }} // Fades in after logo
-            className="font-serif text-xl md:text-2xl tracking-widest italic text-aredco-cream/90"
+            className="font-bonheur text-5xl md:text-6xl text-aredco-cream/90"
         >
           {CONTENT.tagline}
         </MotionP>
@@ -72,9 +72,11 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({ onLearnMore }) =
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 4, duration: 1 }}
-        className="absolute bottom-12 animate-bounce text-white/30 z-10"
+        className="absolute bottom-12 z-10"
       >
-        <ArrowDown size={24} strokeWidth={1} />
+        <div className="bg-white rounded-full p-3 shadow-lg animate-bounce">
+            <ArrowDown size={24} className="text-aredco-green" strokeWidth={1.5} />
+        </div>
       </MotionDiv>
     </div>
   );
@@ -114,7 +116,7 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({ onLearnMore }) =
             onLoadedData={() => setVideoLoaded(true)}
             className={`w-full h-full object-cover transition-opacity duration-1000 ${videoLoaded ? 'opacity-100' : 'opacity-0'}`}
         >
-            <source src={IMAGES.video} />
+            <source src={IMAGES.video} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-black/40" />
         
@@ -124,9 +126,9 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({ onLearnMore }) =
         >
             <button 
                 onClick={onLearnMore}
-                className="group relative px-16 py-5 overflow-hidden bg-transparent border border-aredco-cream text-aredco-cream font-sans tracking-[0.2em] uppercase hover:bg-aredco-cream hover:text-aredco-green transition-all duration-700 ease-out backdrop-blur-sm"
+                className="group relative px-16 py-5 overflow-hidden bg-aredco-green border border-aredco-gold text-white font-sans tracking-[0.2em] uppercase hover:bg-aredco-gold hover:text-aredco-green hover:border-transparent transition-all duration-500 ease-out shadow-2xl"
             >
-                <span className="relative z-10 font-light">Learn More</span>
+                <span className="relative z-10 font-medium">Learn More</span>
             </button>
         </MotionDiv>
     </div>
