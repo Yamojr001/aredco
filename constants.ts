@@ -32,15 +32,15 @@ export const CONTENT = {
   ],
   contact: {
     address: ["AREDCO Headquarters", "Asma’u House along G9 Road", "Dutse, Jigawa State"],
-    email: "ceo@aredco.com",
+    email: "ceo@aredco.com.ng",
     phone: "+234 701 864 4721"
   }
 };
 
 export const IMAGES = {
   logo: "https://triplee.ng/image/logo2.png", 
-  regency1: "https://triplee.ng/image/regency1.JPG", // Wide Aerial
-  regency2: "https://triplee.ng/image/regency2.png", // Close Aerial
-  regency3: "https://triplee.ng/image/regency3.jpg", // Ground View
+  regency1: "https://triplee.ng/image/regency1.JPG",
+  regency2: "https://triplee.ng/image/regency2.png",
+  regency3: "https://triplee.ng/image/regency3.jpg",
   video: "https://triplee.ng/image/Video.mp4"
 };

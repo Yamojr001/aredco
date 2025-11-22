@@ -41,7 +41,6 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({ onLearnMore }) =
   // 1. Hero Layer (The Front Door) - Solid Green, Logo Fades In
   const HeroLayer = (
     <div className="w-full h-full flex flex-col items-center justify-center bg-aredco-green text-aredco-gold relative z-50">
-      {/* No background image here, just pure deep green color as per "Section 0" prompt */}
       <MotionDiv 
         initial={{ opacity: 0 }} 
         animate={{ opacity: 1 }} 
@@ -61,8 +60,8 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({ onLearnMore }) =
         <MotionP 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5, delay: 2.5 }} // Fades in after logo
-            className="font-bonheur text-5xl md:text-6xl text-aredco-cream/90"
+            transition={{ duration: 1.5, delay: 2.5 }}
+            className="font-bonheur text-3xl md:text-3xl text-aredco-cream/90"
         >
           {CONTENT.tagline}
         </MotionP>
